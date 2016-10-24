@@ -11,10 +11,15 @@ $(document).ready(function () {
     /******************************
      ******* other scripts ********
      ******************************/
+
     $('.to-top').click(function() {
         $('body,html').animate({
             scrollTop: 0
         }, 800);
+    });
+
+    $('.burger').click(function() {
+        $(this).siblings('.nav').slideToggle();
     });
 
 

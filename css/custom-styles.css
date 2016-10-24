@@ -518,6 +518,7 @@ section {
     filter: grayscale(100%);
     float: left;
     margin-top: 40px;
+    position: static;
 }
 .services-full .logo:hover {
     -webkit-filter: grayscale(0);
@@ -573,7 +574,7 @@ footer[role='contentinfo'] {
     height: 50px;
     position: absolute;
     left: 45px;
-    top: 25px;
+    top: 30px;
 }
 .to-top {
     width: 58px;
@@ -632,6 +633,26 @@ footer[role='contentinfo'] a {
     }
     .nav {
         display: none;
+        width: 100%;
+        margin: 0;
+        padding-left: 20px;
+    }
+    .nav ul {
+        display: block;
+    }
+    .nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .nav ul li:last-child {
+        margin-bottom: 0;
+    }
+    .burger {
+        display: block;
+        width: 30px;
+        height: 17px;
+        float: left;
+        margin: 10px;
     }
     .lang {
         margin: 10px 20px;
@@ -659,6 +680,7 @@ footer[role='contentinfo'] a {
     }
     .services-full .logo {
         float: none;
+        margin: 0;
     }
     .services-full ul:before {
         display: none;
@@ -666,21 +688,35 @@ footer[role='contentinfo'] a {
     .services-full h3 {
         margin: 20px 0 10px;
     }
+    .services-full ul, .services-full ul:nth-of-type(2) {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .services-full ul:nth-of-type(2) {
+        margin-left: 30px;
+    }
 
 }
 
 @media (max-width: 768px) {
 
+    .logo {
+        width: 190px;
+    }
     .slide .text {
         width: 80%;
     }
     .slide .text p {
-        font-size: 2em;
+        font-size: 1.8em;
+    }
+    .slide .text a {
+        font-size: 1.3em;
     }
     .globe {
         display: none;
     }
-    .promo {
+    .promo, .services-full {
         padding: 60px 40px;
     }
     .promo h1 {
@@ -696,6 +732,54 @@ footer[role='contentinfo'] a {
     }
     .advertisers ol li {
         margin: 20px 0;
+    }
+    .services-full ul, .services-full ul:nth-of-type(2) {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .analytics {
+        position: absolute;
+        left: 40px;
+        bottom: 10px;
+        top: auto;
+    }
+    footer[role='contentinfo'] {
+        background: #a7a7a7;
+        position: relative;
+        padding: 30px 150px 70px 40px;
+    }
+    .slider .slick-dots li button {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    section, .promo, .services-full {
+        padding: 40px 15px;
+    }
+    footer[role='contentinfo'] {
+        padding: 15px 100px 70px 15px;
+    }
+    .analytics {
+        left: 15px;
+    }
+    .slide .text p {
+        font-size: 1.3em;
+    }
+    .slide .text a {
+        font-size: 0.9em;
+    }
+    .company-info {
+        position: relative;
+        top: 0;
+    }
+    .logo {
+        width: 150px;
+        position: absolute;
+        left: 0;
+        top: 50px;
     }
 
 }

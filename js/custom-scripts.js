@@ -4,24 +4,18 @@ $(document).ready(function () {
      ******* init scripts *********
      ******************************/
 
-    if ($(window).width() < '992'){
-
-    } else {
-
-    }
-
-    $(window).resize(function(){
-        if ($(window).width() < '992'){
-
-        } else {
-
-        }
-    });
+    setTimeout(function() {
+        $('.slider').animate({opacity: 1});
+    }, 500);
 
     /******************************
      ******* other scripts ********
      ******************************/
-
+    $('.to-top').click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+    });
 
 
     /*******************************

@@ -29,14 +29,15 @@ $(document).ready(function () {
      ******************************/
 
     $('.slider').slick({
-        arrows: false
+        arrows: false,
+        dots: true
     });
 
     /*******************************
      ******* digits  script ********
      ******************************/
     var show = true;
-    var countbox = ".digits";
+    var countbox = ".statistics";
     $(window).on("scroll load resize", function() {
 
         if (!show) return false;
@@ -53,32 +54,39 @@ $(document).ready(function () {
 
             var space_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
 
-            $('#our-years').animateNumber(
+            $('#years').animateNumber(
                 {
-                    number: 6,
+                    number: 15,
                     numberStep: space_separator_number_step
-                }, 1000
+                }, 1500
             );
 
-            $('#our-logisticians').animateNumber(
+            $('#countries').animateNumber(
                 {
-                    number: 26,
+                    number: 194,
                     numberStep: space_separator_number_step
-                }, 1300
+                }, 1500
             );
 
-            $('#our-clients').animateNumber(
+            $('#cargo').animateNumber(
                 {
-                    number: 248,
+                    number: 900,
                     numberStep: space_separator_number_step
-                }, 2000
+                }, 1500
             );
 
-            $('#our-offices').animateNumber(
+            $('#contracts').animateNumber(
                 {
-                    number: 8,
+                    number: 450,
                     numberStep: space_separator_number_step
-                }, 1000
+                }, 1500
+            );
+
+            $('#transports').animateNumber(
+                {
+                    number: 3,
+                    numberStep: space_separator_number_step
+                }, 1500
             );
 
             show = false;

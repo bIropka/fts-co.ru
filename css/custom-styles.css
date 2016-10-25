@@ -454,7 +454,7 @@ section {
     width: 243px;
     position: absolute;
     right: 20px;
-    top: calc(50% - 92px);
+    top: 200px;
 }
 .promo p {
     padding-bottom: 5px;
@@ -466,12 +466,13 @@ section {
     content: '\2013';
     margin-right: 5px;
 }
-.promo a {
+.promo .read-more {
     font-size: 1.333333333333333em;
     color: #0096dc;
     text-decoration: underline;
+    cursor: pointer;
 }
-.promo a:hover {
+.promo .read-more:hover {
     text-decoration: none;
 }
 
@@ -499,6 +500,9 @@ section {
     background: #ffffff;
     border: 2px solid #0096dc;
     color: #0096dc;
+}
+.hidden-text {
+    display: none;
 }
 
 /* services-full */

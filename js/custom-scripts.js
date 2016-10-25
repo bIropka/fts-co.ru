@@ -22,6 +22,10 @@ $(document).ready(function () {
         $(this).siblings('.nav').slideToggle();
     });
 
+    $('.read-more').click(function() {
+        $(this).siblings('.hidden-text').slideToggle();
+    });
+
 
     /*******************************
      ******* slider scripts ********
